@@ -14,7 +14,7 @@ def contactwebpage():
 def hobbies():
     return render_template('hobbies.html')
 
-@app.route('/download')
+@app.route('/resume')
 def download():
     return send_from_directory(app.config['UPLOAD_FOLDER'],"Resume.pdf", as_attachment=True)
 

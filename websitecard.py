@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, url_for, redirect, flash, sen
 import os
 
 # app = Flask(__name__, static_folder='static', static_url_path='')
-app = Flask(__name__)
+app = Flask(__name__, template_folder='.')
 app.config['SECRET_KEY'] = "213123"
 app.config['UPLOAD_FOLDER'] = "static/files"
 

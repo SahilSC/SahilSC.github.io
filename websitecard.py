@@ -20,7 +20,7 @@ def hobbies():
 @app.route('/download')
 def download(): 
     uploads = os.path.join(app.root_path, app.config['UPLOAD_FOLDER'])
-    return send_from_directory(directory = uploads, filename = "resume.pdf", as_attachment=True)
+    return send_from_directory(directory = uploads, path = "resume.pdf", as_attachment=True)
 
 if __name__=='__main__':
     app.run(debug=True)

@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for, redirect, flash, send_from_directory, session
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='')
 app.config['SECRET_KEY'] = "213123"
 app.config['UPLOAD_FOLDER'] = "static/files"
 

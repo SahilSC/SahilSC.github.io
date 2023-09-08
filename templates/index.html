@@ -10,7 +10,7 @@
 <body>
   <table cellspacing = "20">
     <tr>
-      <td><img src="sahil.jpg" alt="sahil photo" width = "200px"></td>
+      <td><img src="static/assets/img/sahil.jpg" alt="sahil photo" width = "200px"></td>
       <td>
         <h1>Sahil Chowdhury</h1>
         <p><em>Student at <strong><a href="https://admissions.utexas.edu/">UT Austin</a></strong></em></p>
@@ -257,9 +257,9 @@
       <td>&#9734;&#9734;&#9734;&#9734;&#9734;</td>
     </tr>
   </table>
-  <a href="hobbies.html">My Hobbies</a>
+  <a href="{{url_for('hobbies')}}">My Hobbies</a>
   <br>
-  <a href="contactinfo.html">Contact</a>
+  <a href="{{url_for('contactwebpage')}}">Contact</a>
 </body>
 
 </html>
